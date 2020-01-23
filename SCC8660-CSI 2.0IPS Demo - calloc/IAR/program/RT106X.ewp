@@ -1823,6 +1823,9 @@
     <group>
         <name>user_c</name>
         <file>
+            <name>$PROJ_DIR$\..\..\USER\src\control.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\USER\src\function.c</name>
         </file>
         <file>
@@ -1835,6 +1838,9 @@
             <name>$PROJ_DIR$\..\..\USER\src\picture.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\USER\src\pid.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\USER\src\servo.c</name>
         </file>
         <file>
@@ -1843,6 +1849,9 @@
     </group>
     <group>
         <name>user_h</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\USER\src\control.h</name>
+        </file>
         <file>
             <name>$PROJ_DIR$\..\..\USER\src\function.h</name>
         </file>
@@ -1854,6 +1863,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\USER\src\picture.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\USER\src\pid.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\USER\inc\RT106X_config.h</name>

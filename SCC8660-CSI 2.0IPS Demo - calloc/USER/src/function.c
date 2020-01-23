@@ -197,7 +197,7 @@ void RGB2LAB()
       B = (200 * (LabTable[y] - LabTable[z]))>> 10;
       if((L>LL&&L<LM)&&(A>AL&&A<AM)&&(B>BL&&B<BM))
       {
-        img_show[i][j] = 0xFFFF;
+        //img_show[i][j] = 0xE007;
         result[i][j]=1;
       }
       else

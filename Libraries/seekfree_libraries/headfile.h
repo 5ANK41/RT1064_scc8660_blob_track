@@ -77,5 +77,13 @@
 #include "SEEKFREE_SCC8660_CSI.h"
 #include "SEEKFREE_SCC8660.h"
 
+//user
+#include "variable.h"
+#include "function.h"
+#include "picture.h"
+#include "servo.h"
+#include "pid.h"
+#include "control.h"
+
 #endif
 

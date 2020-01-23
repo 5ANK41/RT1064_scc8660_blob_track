@@ -1,5 +1,5 @@
 #pragma once
-
+#include "common.h"
 typedef struct{
 	int lable;
 	int hight;
@@ -24,4 +24,4 @@ typedef struct{
 }blob;
 
 void find_blobs();
-void find_max();
+void draw_rtg();
