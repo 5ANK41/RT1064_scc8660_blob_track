@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"E:\IAR\common\bin\cspybat" -f "G:\RT\SCC8660-CSI 2.0IPS Demo - calloc\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.general.xcl" --backend -f "G:\RT\SCC8660-CSI 2.0IPS Demo - calloc\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.driver.xcl" 
+"E:\IAR\common\bin\cspybat" -f "G:\RT\RT1064_scc8660_blob_track\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.general.xcl" --backend -f "G:\RT\RT1064_scc8660_blob_track\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"E:\IAR\common\bin\cspybat" -f "G:\RT\SCC8660-CSI 2.0IPS Demo - calloc\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.general.xcl" "--debug_file=%~1" --backend -f "G:\RT\SCC8660-CSI 2.0IPS Demo - calloc\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.driver.xcl" 
+"E:\IAR\common\bin\cspybat" -f "G:\RT\RT1064_scc8660_blob_track\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.general.xcl" "--debug_file=%~1" --backend -f "G:\RT\RT1064_scc8660_blob_track\IAR\program\settings\RT106X.nor_sdram_zf_dtcm.driver.xcl" 
 
 @echo off 
 :end
