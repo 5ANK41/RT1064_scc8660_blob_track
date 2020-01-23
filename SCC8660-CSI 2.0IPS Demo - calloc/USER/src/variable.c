@@ -1,5 +1,6 @@
 #include "headfile.h"
 
+
 //速度
 int16 basic_speed = 0;                      //速度
 

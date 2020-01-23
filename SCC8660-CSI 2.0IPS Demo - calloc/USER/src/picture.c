@@ -1,6 +1,7 @@
 #include "headfile.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 void desult()
 {
@@ -109,7 +110,7 @@ void find_blobs()
         }
       }
     }
-    lines[i].grp=(team*)realloc(lines[i].grp,count2*sizeof(team));//每一行瘦身 
+    lines[i].grp=(team*)realloc(lines[i].grp,count2*sizeof(team));//重新分配每一行的空间
     count2 = 0;
   }
   int *number = (int*)calloc(count1,sizeof(int));             ////////////22222222222222222
@@ -195,4 +196,47 @@ void find_blobs()
   blobs = NULL;
   free(number);   /////2222222222
   number = NULL;
+}
+
+void draw_rtg(int x,int y,int pixels,int width)
+{
+  int size = (int)( sqrt(pixels) );
+  int left = x - size;
+  int right = x + size;
+  int up = y - size;
+  int down = y + size;
+  for(int i = left - width;i <= right + width;i++)
+  {
+    if(i < 0)
+      i = 0;
+    for(int j = up -width;j <= up + width;j++)
+    {
+      if(j < 0)
+        j = 0;
+      img_show[j][i] = 0xFFFF;
+    }
+    for(int k = down -width;k <= down + width;k++)
+    {
+      if(k < 0)
+        k = 0;
+      img_show[k][i] = 0xFFFF;
+    }
+  }
+  for(int i = up + width;i <= down - width;i++)
+  {
+    if(i < 0)
+      i = 0;
+    for(int j = left -width;j <= left + width;j++)
+    {
+      if(j < 0)
+        j = 0;
+      img_show[i][j] = 0xFFFF;
+    }
+    for(int k = right -width;k <= right + width;k++)
+    {
+      if(k < 0)
+        k = 0;
+      img_show[i][k] = 0xFFFF;
+    }
+  }
 }

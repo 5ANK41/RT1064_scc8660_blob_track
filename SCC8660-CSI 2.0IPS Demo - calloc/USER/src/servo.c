@@ -1,4 +1,5 @@
 #include "headfile.h"
+#include "servo.h"
 //设置占空比为 百分之 (1000/TIMER1_PWM_DUTY_MAX*100)
 void pwm_test(int16 Left_front_value,int16 Right_front_value,int16 Left_rear_value,int16 Right_rear_value)
 {
